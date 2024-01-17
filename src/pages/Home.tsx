@@ -57,7 +57,7 @@ export const Home = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get('http://localhost:8000');
+      const response = await axios.get('https://deals-rhqq.onrender.com/');
       setProducts(response.data);
     }
     if (isMounted) {
